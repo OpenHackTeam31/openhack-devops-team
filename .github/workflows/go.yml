@@ -33,8 +33,7 @@ jobs:
 
     - name: Get dependencies
       run: |
-        echo ${{env.tripsPath}}
-        go get ./apis/trips
+        go get ./apis/trips/main.go
         
     
     - name: Build
