@@ -19,17 +19,20 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     env: 
-      tripsPath: ../apis/trips
+      tripsPath: ./apis/trips
     steps:
-
+    - uses: actions/checkout@v2
     - name: Setup Go environment
       uses: actions/setup-go@v2.1.2
   
     - name: testing
       run: ls /home/runner/work/
       
+    - name: Get
+      run: go get ${{env.tripsPath}}
+      
     - name: Build
-      run: go build ${{env.tripsPath}}/main.go
+      run: go build ${{env.tripsPath}}
 
     - name: Test
       run: go test ${{env.tripsPath}}/tests
