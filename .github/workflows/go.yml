@@ -19,7 +19,7 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     env: 
-      tripsPath: ./apis/trips
+      tripsPath: apis/trips
     steps:
 
     - name: Set up Go 1.x
