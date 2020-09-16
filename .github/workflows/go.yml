@@ -33,7 +33,7 @@ jobs:
 
     - name: Get dependencies
       run: |
-        go get ./apis/trips/main.go
+        go get ./apis/trips/
         
     
     - name: Build
