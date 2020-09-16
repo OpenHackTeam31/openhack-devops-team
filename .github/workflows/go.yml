@@ -26,7 +26,7 @@ jobs:
       uses: actions/setup-go@v2.1.2
   
     - name: testing
-      run: ls /home/runner/work/
+      run: ls /home/runner/work/openhack-devops-team/openhack-devops-team/
       
     - name: Get
       run: go get ${{env.tripsPath}}
