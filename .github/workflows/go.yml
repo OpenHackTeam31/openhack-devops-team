@@ -5,11 +5,13 @@ on:
     branches-ignore: [master]
     paths: 
       - 'apis/trips/*'
+      - '.github/*'
       
   pull_request:
     branches: [ master ]
     paths: 
       - 'apis/trips/*'
+      - '.github/*'
 
 jobs:
     
